@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Dominio;
+using Negocio;
 namespace Visual
 {
-    public partial class Form1 : Form
+    public partial class frmAgregar : Form
     {
-        public Form1()
+        public frmAgregar()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
