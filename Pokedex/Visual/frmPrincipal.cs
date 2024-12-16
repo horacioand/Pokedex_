@@ -37,7 +37,7 @@ namespace Visual
             List<Pokemon> listaPokemon = pokemonNegocio.listar();
             dgvPokemons.DataSource = listaPokemon;
 
-            dgvPokemons.Columns[3].Visible = false;  //Ocultar columna imagen
+            ocultarColumna(3);  //Ocultar columna imagen
         }
         private void dgvPokemons_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -71,7 +71,10 @@ namespace Visual
                 lblNombreActivo.Text = "Desconocido";
             }
         }
-
+        public void ocultarColumna(int columna)
+        {
+            dgvPokemons.Columns[columna].Visible = false;
+        }
         
     }
 }
