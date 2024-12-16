@@ -45,6 +45,7 @@
             this.dgvPokemons.Name = "dgvPokemons";
             this.dgvPokemons.Size = new System.Drawing.Size(584, 362);
             this.dgvPokemons.TabIndex = 0;
+            this.dgvPokemons.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPokemons_CellContentClick);
             // 
             // pboPokemon
             // 
