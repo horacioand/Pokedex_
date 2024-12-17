@@ -36,7 +36,8 @@ namespace Visual
             PokemonNegocio pokemonNegocio = new PokemonNegocio();
             List<Pokemon> listaPokemon = pokemonNegocio.listar();
             dgvPokemons.DataSource = listaPokemon;
-
+            actualizarImagen(listaPokemon[0].Imagen);
+            actualizarNombre(listaPokemon[0].Nombre);
             ocultarColumna(3);  //Ocultar columna imagen
         }
         private void dgvPokemons_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -50,9 +50,11 @@
             // pboPokemon
             // 
             this.pboPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.pboPokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pboPokemon.Location = new System.Drawing.Point(602, 12);
             this.pboPokemon.Name = "pboPokemon";
             this.pboPokemon.Size = new System.Drawing.Size(186, 186);
+            this.pboPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboPokemon.TabIndex = 1;
             this.pboPokemon.TabStop = false;
             // 

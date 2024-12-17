@@ -22,5 +22,10 @@ namespace Visual
         {
             Close();
         }
+
+        private void frmAgregar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
