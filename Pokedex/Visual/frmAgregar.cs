@@ -25,7 +25,10 @@ namespace Visual
 
         private void frmAgregar_Load(object sender, EventArgs e)
         {
-
+            ElementoNegocio elementoNegocio = new ElementoNegocio();
+            List<Elemento> listaElementos = elementoNegocio.listar();
+            cboTipo.DataSource = listaElementos;
+            cboDebilidad.DataSource = listaElementos;
         }
     }
 }
