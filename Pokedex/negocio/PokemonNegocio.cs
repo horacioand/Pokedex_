@@ -42,6 +42,24 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public void agregarPokemon(Pokemon pokemon)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("INSERT INTO POKEMONS (Numero, Nombre, Descripcion, Activo) VALUES ("+ pokemon.Numero +",'"+ pokemon.Nombre +"','"+ pokemon.Descripcion +"',1)");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
  

@@ -30,5 +30,16 @@ namespace Visual
             cboTipo.DataSource = listaElementos;
             cboDebilidad.DataSource = listaElementos;
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            PokemonNegocio pokemonNegocio = new PokemonNegocio();
+            Pokemon nuevoPokemon = new Pokemon();
+            nuevoPokemon.Numero = int.Parse(txtNumero.Text);
+            nuevoPokemon.Nombre = txtNombre.Text;
+            nuevoPokemon.Descripcion = txtDescripcion.Text;
+            pokemonNegocio.agregarPokemon(nuevoPokemon);
+            Close();
+        }
     }
 }
